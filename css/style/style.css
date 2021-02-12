@@ -71,6 +71,7 @@
   	-moz-osx-font-smoothing: grayscale;
 }
 body {
+	background-image:url("https://oxmc.github.io/Astrobuild2/images/bg.jpg");
   	background-color: #334165;
   	margin: 0;
 }
