@@ -73,10 +73,6 @@
 body {
   	background-color: #334165;
   	margin: 0;
-	background-image: url('https://oxmc.github.io/Astrobuild2/images/galaxy.jfif');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
 }
 div.a {
         width: 600px;
@@ -260,6 +256,10 @@ div.a {
 #center {
   text-align: center;
   display: center;
+  background-image: url('https://oxmc.github.io/Astrobuild2/images/galaxy.jfif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 div.center {
