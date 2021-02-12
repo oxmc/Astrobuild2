@@ -1,0 +1,304 @@
+.navtop {
+	background-color: #58606b;
+	height: 60px;
+	width: 100%;
+	border: 0;
+}
+.navtop div {
+	display: flex;
+	margin: 0 auto;
+	width: 1000px;
+	height: 100%;
+}
+.navtop div h1, .navtop div a {
+	display: inline-flex;
+	align-items: center;
+}
+.navtop div h1 {
+	flex: 1;
+	font-size: 24px;
+	padding: 0;
+	margin: 0;
+	color: #eaebed;
+	font-weight: normal;
+}
+.navtop div a {
+	padding: 0 20px;
+	text-decoration: none;
+	color: #c1c4c8;
+	font-weight: bold;
+}
+.navtop div a i {
+	padding: 2px 8px 0 0;
+}
+.navtop div a:hover {
+	color: #eaebed;
+}
+.content {
+	width: 1000px;
+	margin: 0 auto;
+}
+.content h2 {
+	margin: 0;
+	padding: 25px 0;
+	font-size: 22px;
+	border-bottom: 1px solid #e0e0e3;
+	color: green;
+}
+.content > p, .content > div {
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+	margin: 25px 0;
+	padding: 25px;
+	background-color: #green;
+}
+.content > p table td, .content > div table td {
+	padding: 5px;
+}
+.content > p table td:first-child, .content > div table td:first-child {
+	font-weight: bold;
+	color: #4a536e;
+	padding-right: 15px;
+}
+.content > div p {
+	padding: 5px;
+	margin: 0 0 10px 0;
+}
+* {
+  	box-sizing: border-box;
+  	font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+  	font-size: 16px;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+body {
+  	background-color: #334165;
+  	margin: 0;
+}
+div.a {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button2 {
+  background-color: royalblue; /* blue */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button2:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.fstPage {
+    background-image:url("https://oxmc.github.io/thotlessclothing.github.io/images/bg.jpg");
+    /*background-color: lightgray;*/
+    height: 700px;
+    width:100%;
+    background-size:cover;
+}
+.sec {
+  background-color: black;
+  color: white;
+}
+.sec2 {
+  background-color: transperant;
+  color: white;
+}
+.sec3 {
+  background-color: transperant;
+  color: blue;
+}
+.serif {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.sansserif {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.monospace {
+  font-family: "Lucida Console", Courier, monospace;
+}
+.impact {
+  font-family: Impact, Charcoal, sans-serif;
+}
+.normal {
+  font-style: normal;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.oblique {
+  font-style: oblique;
+}
+
+.cursive {
+  font-family: cursive;
+}
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+}
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+#center {
+  text-align: center;
+  display: center;
+}
+
+div.center {
+  text-align: center;
+  display: center;
+}
+
+div.round {
+  text-align: center;
+  display: center;
+}
+
+div.blue {
+  text-color: blue;
+}
+
+div.d {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+  display: inline-block;
+}
+
+div.d2 {
+  background-color: lightgrey;
+  width: 700px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+div.round2 {
+  border: 2px solid red;
+  border-radius: 8px;
+  display: inline-block;
+}
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}

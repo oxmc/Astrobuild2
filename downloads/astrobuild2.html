@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/gif" href="../images/logo.png">
+    <title>Astrobuild2 - downloads</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="../css/style/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/style/loading.css" type="text/css">
+    <!-- Experimental galaxy scrollbar <link href="css/scrollbars/scrollbar.css" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="../css/scrollbars/scrollbar2.css" type="text/css">
+  </head>
+    <body>
+      <div class="center">
+<div class="a">
+  <div id="mainview">
+    <h1>Preparring download...</h1>
+  </div>
+  <div id="unkownid" style="display:none;">
+    <h1>This page was not sent the right data! please double check that you are supposed to be at this page!</h1>
+    <a href="../index.html">Homepage</a>
+  </div>
+  <div id="error" style="display:none;">
+    <h1 id="errortxt"></h1>
+  </div>
+  <div id="link" style="display:none;">
+    <h1 id=txt></h1>
+    <a id="link1"></a>
+    <a href="../index.html">Homepage</a>
+  </div>
+</div>
+</div>
+      <script>
+      var url = location.search.substring(1);
+      var error = document.getElementById("error");
+      var linkurl = document.getElementById("link");
+      var linktxt = document.getElementById("link1");
+      var mainview = document.getElementById("mainview");
+      var errortxt = document.getElementById("errortxt");
+      var unkownid = document.getElementById("unkownid");
+      var txt = document.getElementById("txt");
+      if (url == "test") {
+        alert("Test mode active");
+        alert("Starting download.");
+        window.location.href = "http://download1489.mediafire.com/fjzsyrbkmtyg/p6lc2c9ft6stpec/1runbZH-pretty-flower-wallpaper.jpg";
+      } else if (url == "ver=1") {
+        window.location.href = "https://cdn.discordapp.com/attachments/800901760842989599/806269178566803486/0.0.1.zip";
+      } else if (url == "ver=2") {
+        window.location.href = "https://cdn.discordapp.com/attachments/800901760842989599/806636815305932850/0.0.2.zip";
+      } else {
+        alert("Download Id was not found.");
+        mainview.style.display = "none";
+        unkownid.style.display = "block";
+      }
+
+var url = location.search.substring(1);
+var server;
+var link;
+
+function Id() {
+  if (url == "id=GB") {
+    server = "Gachabuddys";
+    link = "https://discord.gg/pEHP7QSX72";
+  } else if (url == "id=botspot") {
+    server = "Botspot software";
+    link = "https://discord.gg/RXSTvaUvuu";
+  } else if (url == "id=AB") {
+    server = "AstroBuild";
+    link = "https://discord.gg/72hA96B5ep";
+  } else {
+    server = "unkownid";
+  }
+  if (server == "unkownid") {
+    mainview.style.display = "none";
+    unkownid.style.display = "block";
+  } else {
+    mainview.style.display = "none";
+    linkurl.style.display = "block";
+    linktxt.style.display = "block";
+    Link(link)
+    linktxt.innerHTML = "Manual Link";
+    txt.innerHTML = "If the page doesn't open the link to join " + server + ", A manual link is below.";
+  }
+}
+
+function ErrorDisplay(error) {
+  linktxt.style.display = "block";
+  errortxt.innerHTML = error;
+}
+      </script>
+    </body>
+</html>
