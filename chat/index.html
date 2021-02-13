@@ -9,6 +9,16 @@
   <link rel="stylesheet" href="https://oxmc.github.io/Astrobuild2/css/style/style.css" type="text/css">
   <link rel="stylesheet" href="https://oxmc.github.io/Astrobuild2/css/style/loading.css" type="text/css">
   <title>Game chat</title>
+  <div class="loader">
+          <img src="https://oxmc.github.io/Astrobuild2/images/loading.webp" alt="Loading..." />
+      </div>
+      <script>
+      window.addEventListener("load", function () {
+          const loader = document.querySelector(".loader");
+          loader.className += " hidden"; // class "loader hidden"
+      });
+      </script>
+  </div>
   <style>
     body {
       box-sizing: border-box;
