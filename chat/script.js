@@ -90,8 +90,6 @@ const DOM = {
   messages: document.querySelector('.messages'),
   input: document.querySelector('.message-form__input'),
   form: document.querySelector('.message-form'),
-  input: document.querySelector('.name'),
-  form: document.querySelector('.username'),
 };
 
 DOM.form.addEventListener('submit', sendMessage);

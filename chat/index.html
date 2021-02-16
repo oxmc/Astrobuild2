@@ -61,6 +61,7 @@
     }
     .message-form__button {
       margin: 10px;
+      border: 1px solid #dfdfdf;
     }
   </style>
 </head>
@@ -75,13 +76,14 @@
       });
       </script>
   <div class="a">
-    Names are randomly generated!
+    To change your name, type in the box below and click here.
+    <form onchange="changename()">
+      <input class="message-form__input" id="name2" placeholder="Username" type="text"/>
+    </form>
+    <!--Names are randomly generated!-->
   </div>
   <div class="a">
-    <form class="username" onsubmit="return false;">
-    <input class="name" placeholder="username" type="text"/>
-    <input class="name__button" value="Send" type="submit"/>
-  </form>
+  <!--<input class="message-form__input" id="name" placeholder="Username" type="text"/>-->
   <div class="members-count">-</div>
   <div class="members-list">-</div>
   <div class="messages"></div>
@@ -89,6 +91,24 @@
     <input class="message-form__input" placeholder="Type a message.." type="text"/>
     <input class="message-form__button" value="Send" type="submit"/>
   </form>
+  <script>
+  function changename() {
+    var namebox = document.getElementById("name2").value;
+    console.log('Your username: | ?uname=' + namebox + '|');
+    location.assign('?uname=' + namebox)
+  }
+  var name;// = document.getElementById("name").value;
+  if (!location.search.substring(7) == "") {
+    name = location.search.substring(7);
+    //name = "Astronaut"
+  } else {
+    location.assign("?uname=Astronaut");
+    //name = "Astronaut"
+    //name = location.search.substring(7);
+  }
+  console.log('Your username: |' + name + '|');
+  //location.assign("?uname=" , name);
+  </script>
   <script src="./script.js"></script>
 </div>
 </body>
