@@ -44,6 +44,9 @@ drone.on('open', error => {
   room.on('data', (text, member) => {
     if (member) {
       addMessageToListDOM(text, member);
+      var FileSaver = require('https://oxmc.github.io/js/filesaver.js');
+      var blob = new Blob([member, text], {type: "text/plain;charset=utf-8"});
+      FileSaver.saveAs(blob, "Chat_Log.txt");
     } else {
       // Message is from server
     }
