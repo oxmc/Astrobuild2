@@ -4,7 +4,7 @@ const CLIENT_ID = '32pfV4qzhUzwPIdv';
 
 const drone = new ScaleDrone(CLIENT_ID, {
   data: { // Will be sent out as clientData via events
-    name: document.querySelector('.name'), //getRandomName(),
+    name: location.search.substring(7), //getRandomName(),
     color: getRandomColor(),
   },
 });
@@ -70,6 +70,16 @@ function getRandomName() {
 
 function getRandomColor() {
   return '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16);
+}
+
+function getName() {
+  //while (true) {
+  //  sleep(5);
+  //  document.getElementById("name").value;
+  //}
+  //var name3="document.getElementById("name").value;"
+  //document.getElementById("name").value;
+  //console.log('Your username:', name3);
 }
 
 //------------- DOM STUFF
