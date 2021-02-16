@@ -4,7 +4,7 @@ const CLIENT_ID = '32pfV4qzhUzwPIdv';
 
 const drone = new ScaleDrone(CLIENT_ID, {
   data: { // Will be sent out as clientData via events
-    name: getRandomName(),
+    name: document.querySelector('.name'), //getRandomName(),
     color: getRandomColor(),
   },
 });
@@ -80,6 +80,8 @@ const DOM = {
   messages: document.querySelector('.messages'),
   input: document.querySelector('.message-form__input'),
   form: document.querySelector('.message-form'),
+  input: document.querySelector('.name'),
+  form: document.querySelector('.username'),
 };
 
 DOM.form.addEventListener('submit', sendMessage);
