@@ -3,7 +3,7 @@
 <head>
   <title>Chat</title>
   <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
-  <link rel="stylesheet" href="https://oxmc.github.io/Astrobuild2/css/style/style.css" type="text/css">
+  <!--<link rel="stylesheet" href="https://oxmc.github.io/Astrobuild2/css/style/style.css" type="text/css">-->
   <link rel="stylesheet" href="https://oxmc.github.io/Astrobuild2/css/style/loading.css" type="text/css">
   <link rel="shortcut icon" type="image/gif" href="https://oxmc.github.io/Astrobuild2/images/logo.png">
   <!--<script type='text/javascript' src='http://0.0.0.0:8080/scaledrone.js'></script>-->
@@ -22,8 +22,10 @@
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;
-    }
 
+      font-size: 1.125rem;
+      max-width: 100rem;
+    }
     .members-count,
     .members-list,
     .messages {
@@ -63,9 +65,52 @@
       margin: 10px;
       border: 1px solid #dfdfdf;
     }
+    .dark,
+    .dark * {
+        background-color: #222;
+        color: #e6e6e6;
+        border-color: #e6e6e6;
+        width: 600px;
+        margin: 1em auto;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    .a {
+        width: 600px;
+        margin: 1em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    .divm {
+      padding: 2em;
+      border-radius: 0.5em;
+      background-color: #222;
+      color: #e6e6e6;
+      border-color: #e6e6e6;
+      width: 600px;
+      margin: 1em auto;
+      box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    .switch {
+    align-self: flex-end;
+    margin: 0.9375rem;
+    }
+    .inner-switch {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #555;
+    border-radius: 1.25rem;
+    width: 3.125rem;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.1875rem;
+    margin-left: 0.3125rem;
+    }
   </style>
 </head>
-<body>
+<body onLoad="pageScroll()">
   <div class="loader">
           <img src="https://oxmc.github.io/Astrobuild2/images/loading.webp" alt="Loading..." />
       </div>
@@ -75,14 +120,14 @@
           loader.className += " hidden"; // class "loader hidden"
       });
       </script>
-  <div class="a">
+  <divm id="main" class="a">
     To change your name, type in the box below and click here.
     <form onchange="changename()">
       <input id="name2" placeholder="Username" type="text"/>
     </form>
     <!--Names are randomly generated!-->
-  </div>
-  <div class="a">
+  </divm>
+  <divm id="main2" class="a">
   <!--<input class="message-form__input" id="name" placeholder="Username" type="text"/>-->
   <div class="members-count">-</div>
   <div class="members-list">-</div>
@@ -91,7 +136,23 @@
     <input class="message-form__input" placeholder="Type a message.." type="text"/>
     <input class="message-form__button" value="Send" type="submit"/>
   </form>
+  <a href="javascript:pageScroll()">Enable Page Scroll</a>
+  -
+  <a href="javascript:stopScroll()">Disable Page Scroll</a>
+  -
+  <div class="switch">Dark mode:
+      <span class="inner-switch">OFF</span>
+  </divm>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="switch.js"></script>
   <script>
+  function pageScroll() {
+    	window.scrollBy(0,50); // horizontal and vertical scroll increments
+    	scrolldelay = setTimeout('pageScroll()',100); // scrolls every 100 milliseconds
+  }
+  function stopScroll() {
+    	clearTimeout(scrolldelay);
+  }
   function changename() {
     var namebox = document.getElementById("name2").value;
     console.log('Your username: | ?uname=' + namebox + '|');
