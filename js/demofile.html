@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Online text editor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<style type="text/css">
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        margin-top: 10px;
+    }
+
+    textarea {
+        margin-top: 15px;
+        width: 70%;
+    }
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+
+    .container {
+    ...
+    position: relative;
+  }
+
+  .child {
+    width: 50px;
+    height: 50px;
+    /* Center vertically and horizontally */
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    margin: -25px 0 0 -25px; /* apply negative top and left margins to truly center the element */
+  }
+  .child2 {
+    width: 50px;
+    height: 50px;
+    /* Center vertically and horizontally */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 230px 0 0 -25px; /* apply negative top and left margins to truly center the element */
+  }
+  .child3 {
+    width: 50px;
+    height: 50px;
+    /* Center vertically and horizontally */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 60px 0 0 80px; /* apply negative top and left margins to truly center the element */
+  }
+</style>
+<body>
+    <center>
+        <h1 style="color: green;">
+          GeeksforGeeks
+        </h1>
+        <div>
+            <input type="file">
+            <textarea cols="30" rows="20" placeholder="Text typed here will be saved to a txt file.">
+            </textarea>
+            <form>
+            <input id="filename" type="text" placeholder="filename.txt" />
+            </form>
+        </div>
+    </center>
+    <script src="script.js"></script>
+    <script src="FileSaver.js"></script>
+    <div class="child2">
+      <a onclick="saveDynamicDataToFile();" class="btn btn-info btn-lg">
+        <span class="glyphicon glyphicon-floppy-save"></span> Save To Disk
+      </a>
+      <a onclick="loadTextFromFile();" class="btn btn-info btn-lg">
+        <span class="glyphicon glyphicon-floppy-save"></span> Open From Disk
+      </a>
+    </div>
+  </body>
+  </html>
