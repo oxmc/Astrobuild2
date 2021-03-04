@@ -5,7 +5,10 @@
   <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
   <!--<link rel="stylesheet" href="https://oxmc.github.io/Astrobuild2/css/style/style.css" type="text/css">-->
   <link rel="stylesheet" href="https://oxmc.github.io/Astrobuild2/css/style/loading.css" type="text/css">
-  <link rel="stylesheet" href="warning.css" type="text/css">
+  <link rel="stylesheet" href="https://oxmc.github.io/Astrobuild2/css/Notification/warning.css" type="text/css">
+  <link rel="stylesheet" href="https://oxmc.github.io/Astrobuild2/css/Notification/popup.css">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="shortcut icon" type="image/gif" href="https://oxmc.github.io/Astrobuild2/images/logo.png">
   <!--<script type='text/javascript' src='http://0.0.0.0:8080/scaledrone.js'></script>-->
   <meta charset="utf-8">
@@ -121,7 +124,29 @@
           loader.className += " hidden"; // class "loader hidden"
       });
       </script>
-  <iframe id="t" src="warning.html" onload="this.before((this.contentDocument.body||this.contentDocument));this.remove()"></iframe>
+<div class="popup center">
+  <div class="icon">
+    <i class="fa fa-exclamation-circle"></i>
+  </div>
+  <div class="title">
+    Warning
+  </div>
+  <div class="description">
+    Remember that this is an online chating service, anything can happen! you have been warned.
+  </div>
+  <div class="dismiss-btn">
+    <button id="dismiss-popup-btn" onClick="ClosePopUp();">
+      Dismiss
+    </button>
+  </div>
+</div>
+ <!-- <div class="center">
+  <button id="open-popup-btn" onClick="OpenPopUp();">
+    Open Popup
+  </button>
+</div> -->
+<script src="https://oxmc.github.io/Astrobuild2/js/pop-up.js"></script>
+  <!--<iframe id="t" src="warning.html" onload="this.before((this.contentDocument.body||this.contentDocument));this.remove()"></iframe>-->
   <divm id="main" class="a">
     To change your name, type in the box below and click here.
     <form onchange="changename()">
