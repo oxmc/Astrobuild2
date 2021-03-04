@@ -9,3 +9,5 @@ function ClosePopUp(){
     document.getElementsByClassName("popup")[0].classList.remove("active");
 });
 }
+
+document.getElementsByClassName("popup")[0].classList.add("active");
