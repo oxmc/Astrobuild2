@@ -1,0 +1,43 @@
+{
+  "short_name": "AStrobuild2",
+  "name": "Astrobuild2: Personal",
+  "icons": [
+    {
+      "src": "/images/logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#3367D6",
+  "shortcuts": [
+    {
+      "name": "Astrobuild2chat",
+      "short_name": "astrochat",
+      "description": "Chat with others playing Astrobuild2",
+      "url": "/chat/?source=pwa",
+      "icons": [{ "src": "/images/logo.png", "sizes": "192x192" }]
+    }
+  ],
+  "description": "Chat with others playing Astrobuild2",
+  "screenshots": [
+    {
+      "src": "/images/logo.png",
+      "type": "image/png",
+      "sizes": "540x720"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "type": "image/jpg",
+      "sizes": "540x720"
+    }
+  ]
+}
