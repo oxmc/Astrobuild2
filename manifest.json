@@ -1,13 +1,50 @@
 {
-  "short_name": "Astrobuild2",
-  "lang": "en-US",
-  "start_url": "https://oxmc.github.io/Astrobuild2/",
-  "display": "standalone",
-  "theme_color": "#3284c6",
+  "short_name": "Weather",
+  "name": "Weather: Do I need an umbrella?",
   "icons": [
     {
-      "src": "https://oxmc.github.io/Astrobuild2/images/logo.png",
-      "type": "image/png"
+      "src": "/images/logo-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/logo-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#3367D6",
+  "shortcuts": [
+    {
+      "name": "How's weather today?",
+      "short_name": "Today",
+      "description": "View weather information for today",
+      "url": "/today?source=pwa",
+      "icons": [{ "src": "/images/logo.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "How's weather tomorrow?",
+      "short_name": "Tomorrow",
+      "description": "View weather information for tomorrow",
+      "url": "/tomorrow?source=pwa",
+      "icons": [{ "src": "/images/logo.png", "sizes": "192x192" }]
+    }
+  ],
+  "description": "Weather forecast information",
+  "screenshots": [
+    {
+      "src": "/images/logo.png",
+      "type": "image/png",
+      "sizes": "540x720"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "type": "image/jpg",
+      "sizes": "540x720"
     }
   ]
 }
