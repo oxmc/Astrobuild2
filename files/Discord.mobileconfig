@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<key>ConsentText</key>
+<dict>
+<key>default</key>
+<string></string>
+</dict>
+ <key>PayloadContent</key>
+ <array>
+   <dict>
+     <key>FullScreen</key>
+     <true/>
+     <key>Icon</key>
+     <data></data>
+     <key>IsRemovable</key>
+     <true/>
+     <key>Label</key>
+     <string>Discord</string>
+     <key>PayloadDescription</key>
+     <string>Adds a Web Clip.</string>
+     <key>PayloadDisplayName</key>
+     <string>Web Clip (Discord)</string>
+     <key>PayloadIdentifier</key>
+     <string>discord-web</string>
+     <key>PayloadOrganization</key>
+     <string>oxmc</string>
+     <key>PayloadType</key>
+     <string>com.apple.webClip.managed</string>
+     <key>PayloadUUID</key>
+     <string>c3b2c123-6253-464e-afde-0d987400da0f</string>
+     <key>PayloadVersion</key>
+     <integer>1</integer>
+     <key>Precomposed</key>
+     <false/>
+     <key>URL</key>
+     <string>https://discord.com/app</string>
+   </dict>
+ </array>
+ <key>PayloadDescription</key>
+ <string>Adds web version of discord.</string>
+ <key>PayloadDisplayName</key>
+ <string>Discord</string>
+ <key>PayloadIdentifier</key>
+ <string>discord-web</string>
+ <key>PayloadOrganization</key>
+ <string>oxmc</string>
+ <key>PayloadRemovalDisallowed</key>
+ <false/>
+ <key>PayloadType</key>
+ <string>Configuration</string>
+ <key>PayloadUUID</key>
+ <string>345097fb-d4f7-4a34-ab90-2e3f1ad62eed</string>
+ <key>PayloadVersion</key>
+ <integer>1</integer>
+</dict>
+</plist>
