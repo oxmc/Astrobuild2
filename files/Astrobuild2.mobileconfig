@@ -5,7 +5,7 @@
 <key>ConsentText</key>
 <dict>
 <key>default</key>
-<string>RockDotGames inc. and oxmc’s privacy policy, you can find that on our website at RockDotGames.com and oxmc.github.io</string>
+<string>By using this program you agree to RockDotGames inc. and oxmc’s privacy policy, you can find that on our website at RockDotGames.com and oxmc.github.io</string>
 </dict>
  <key>PayloadContent</key>
  <array>
